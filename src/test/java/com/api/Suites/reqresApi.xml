@@ -14,7 +14,7 @@
         <classes>
             <class name="com.api.ApiTest.apiTest">
                 <methods>
-                    <parameter name="page" value="1"></parameter>
+                    <parameter name="page" value="2"></parameter>
                     <include name="listUsers"/>
                 </methods>
             </class>
@@ -25,8 +25,8 @@
         <classes>
             <class name="com.api.ApiTest.apiTest">
                 <methods>
-                    <parameter name="name" value="rajeev"></parameter>
-                    <parameter name="job" value="sdet"></parameter>
+                    <parameter name="name" value="morpheus"></parameter>
+                    <parameter name="job" value="leader"></parameter>
                     <include name="createUsers"/>
                 </methods>
             </class>
@@ -37,8 +37,8 @@
         <classes>
             <class name="com.api.ApiTest.apiTest">
                 <methods>
-                    <parameter name="name" value="rajeevk"></parameter>
-                    <parameter name="job" value="sdet"></parameter>
+                    <parameter name="name" value="morpheus"></parameter>
+                    <parameter name="job" value="zion resident"></parameter>
                     <parameter name="id" value="2"></parameter>
                     <include name="updateUsers"/>
                 </methods>

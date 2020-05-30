@@ -42,20 +42,20 @@ public class AssertionApiDetails {
 
     public void assertDataDetails(SoftAssertions softAssertions,Response response, ResponsePojo responsePojo){
         SoftAssert softAssert=new SoftAssert();
-        List<String> expectedIdList = Arrays.asList("1","2","3","4","5","6");
-        List<String> expectedEmailList = Arrays.asList("george.bluth@reqres.in","janet.weaver@reqres.in","emma.wong@reqres.in","eve.holt@reqres.in","charles.morris@reqres.in","tracey.ramos@reqres.in");
-        List<String> expectedFnList = Arrays.asList("George","Janet","Emma","Eve","Charles","Tracey");
-        List<String> expectedLnList = Arrays.asList("Bluth","Weaver","Wong","Holt","Morris","Ramos");
-        List<String> expectedAvatarList = Arrays.asList("https://s3.amazonaws.com/uifaces/faces/twitter/calebogden/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/olegpogodaev/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/marcoramires/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/stephenmoon/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/bigmancho/128.jpg");
+        List<String> expectedIdList = Arrays.asList("7","8","9","10","11","12");
+        List<String> expectedEmailList = Arrays.asList("michael.lawson@reqres.in","lindsay.ferguson@reqres.in","tobias.funke@reqres.in","byron.fields@reqres.in","george.edwards@reqres.in","rachel.howell@reqres.in");
+        List<String> expectedFnList = Arrays.asList("Michael","Lindsay","Tobias","Byron","George","Rachel");
+        List<String> expectedLnList = Arrays.asList("Lawson","Ferguson","Funke","Fields","Edwards","Howell");
+        List<String> expectedAvatarList = Arrays.asList("https://s3.amazonaws.com/uifaces/faces/twitter/follettkyle/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/araa3185/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/vivekprvr/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/russoedu/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/mrmoiree/128.jpg","https://s3.amazonaws.com/uifaces/faces/twitter/hebertialmeida/128.jpg");
         if(response.getStatusCode()==200){
             List<Datum> actualList = responsePojo.getData();
             softAssert.assertEquals(actualList.size(), 6);
             for (int i = 0; i < actualList.size(); i++) {
-                softAssert.assertEquals(actualList.get(i).getId(),expectedIdList.get(i));
-                softAssert.assertEquals(actualList.get(i).getEmail(),expectedEmailList.get(i));
-                softAssert.assertEquals(actualList.get(i).getFirstName(),expectedFnList.get(i));
-                softAssert.assertEquals(actualList.get(i).getLastName(),expectedLnList.get(i));
-                softAssert.assertEquals(actualList.get(i).getAvatar(),expectedAvatarList.get(i));
+                softAssertions.assertThat(actualList.get(i).getId()).asString().isEqualTo(expectedIdList.get(i));
+                softAssertions.assertThat(actualList.get(i).getFirstName()).asString().isEqualTo(expectedFnList.get(i));
+                softAssertions.assertThat(actualList.get(i).getLastName()).asString().isEqualTo(expectedLnList.get(i));
+                softAssertions.assertThat(actualList.get(i).getEmail()).asString().isEqualTo(expectedEmailList.get(i));
+                softAssertions.assertThat(actualList.get(i).getAvatar()).asString().isEqualTo(expectedAvatarList.get(i));
                 logger.info("ID"+" "+actualList.get(i).getId());
                 logger.info("First Name"+" "+actualList.get(i).getFirstName());
                 logger.info("Last Name"+" "+actualList.get(i).getLastName());
