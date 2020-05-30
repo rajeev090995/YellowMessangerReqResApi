@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="16" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-05-30T05:57:18Z" name="API Automation" finished-at="2020-05-30T05:57:24Z" duration-ms="6647">
+    <groups>
+    </groups>
+    <test started-at="2020-05-30T05:57:18Z" name="GET API FOR LIST USERS" finished-at="2020-05-30T05:57:21Z" duration-ms="3780">
+      <class name="com.api.ApiTest.apiTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@741b3bc3]" started-at="2020-05-30T11:27:18Z" name="beforeTest" finished-at="2020-05-30T11:27:18Z" duration-ms="83" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://reqres.in/api/users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@741b3bc3]" started-at="2020-05-30T11:27:18Z" name="beforeMethod" finished-at="2020-05-30T11:27:18Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="listUsers(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.api.ApiTest.apiTest@741b3bc3]" started-at="2020-05-30T11:27:18Z" name="listUsers" finished-at="2020-05-30T11:27:21Z" duration-ms="3670" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[StatusCode Weekly]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://statuscode.org/]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listUsers -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.api.ApiTest.apiTest@741b3bc3]" started-at="2020-05-30T11:27:21Z" name="afterTest" finished-at="2020-05-30T11:27:21Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.api.ApiTest.apiTest -->
+    </test> <!-- GET API FOR LIST USERS -->
+    <test started-at="2020-05-30T05:57:21Z" name="POST API FOR CREATE USERS" finished-at="2020-05-30T05:57:23Z" duration-ms="1114">
+      <class name="com.api.ApiTest.apiTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@7e242b4d]" started-at="2020-05-30T11:27:21Z" name="beforeTest" finished-at="2020-05-30T11:27:21Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://reqres.in/api/users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@7e242b4d]" started-at="2020-05-30T11:27:21Z" name="beforeMethod" finished-at="2020-05-30T11:27:21Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="createUsers(java.lang.String, java.lang.String, java.lang.String)[pri:2, instance:com.api.ApiTest.apiTest@7e242b4d]" started-at="2020-05-30T11:27:21Z" name="createUsers" finished-at="2020-05-30T11:27:23Z" duration-ms="1109" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://reqres.in/api/users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rajeev]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sdet]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUsers -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.api.ApiTest.apiTest@7e242b4d]" started-at="2020-05-30T11:27:23Z" name="afterTest" finished-at="2020-05-30T11:27:23Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.api.ApiTest.apiTest -->
+    </test> <!-- POST API FOR CREATE USERS -->
+    <test started-at="2020-05-30T05:57:23Z" name="PUT API FOR UPDATE USERS" finished-at="2020-05-30T05:57:24Z" duration-ms="984">
+      <class name="com.api.ApiTest.apiTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@43b4fe19]" started-at="2020-05-30T11:27:23Z" name="beforeTest" finished-at="2020-05-30T11:27:23Z" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://reqres.in/api/users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="updateUsers(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.api.ApiTest.apiTest@43b4fe19]" started-at="2020-05-30T11:27:23Z" name="updateUsers" finished-at="2020-05-30T11:27:24Z" duration-ms="978" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://reqres.in/api/users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rajeevk]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[sdet]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUsers -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@43b4fe19]" started-at="2020-05-30T11:27:23Z" name="beforeMethod" finished-at="2020-05-30T11:27:23Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.api.ApiTest.apiTest@43b4fe19]" started-at="2020-05-30T11:27:24Z" name="afterTest" finished-at="2020-05-30T11:27:24Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.api.ApiTest.apiTest -->
+    </test> <!-- PUT API FOR UPDATE USERS -->
+    <test started-at="2020-05-30T05:57:24Z" name="DELETE API FOR DELETE USERS" finished-at="2020-05-30T05:57:24Z" duration-ms="722">
+      <class name="com.api.ApiTest.apiTest">
+        <test-method is-config="true" signature="beforeTest(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@44c79f32]" started-at="2020-05-30T11:27:24Z" name="beforeTest" finished-at="2020-05-30T11:27:24Z" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://reqres.in/api/users]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.api.ApiTest.apiTest@44c79f32]" started-at="2020-05-30T11:27:24Z" name="beforeMethod" finished-at="2020-05-30T11:27:24Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="deleteUsers(java.lang.String, java.lang.String)[pri:4, instance:com.api.ApiTest.apiTest@44c79f32]" started-at="2020-05-30T11:27:24Z" name="deleteUsers" finished-at="2020-05-30T11:27:24Z" duration-ms="714" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://reqres.in/api/users]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteUsers -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.api.ApiTest.apiTest@44c79f32]" started-at="2020-05-30T11:27:24Z" name="afterTest" finished-at="2020-05-30T11:27:24Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.api.ApiTest.apiTest -->
+    </test> <!-- DELETE API FOR DELETE USERS -->
+  </suite> <!-- API Automation -->
+</testng-results>

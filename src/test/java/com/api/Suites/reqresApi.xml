@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="API Automation">
+    <parameter name="baseURI" value="https://reqres.in/api/users"/>
+    <parameter name="company" value="StatusCode Weekly"/>
+    <parameter name="url" value="http://statuscode.org/"/>
+    <parameter name="text" value="A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things."/>
+
+
+    <!-- ############################## Testing ##################### -->
+
+    <test name="GET API FOR LIST USERS">
+        <classes>
+            <class name="com.api.ApiTest.apiTest">
+                <methods>
+                    <parameter name="page" value="1"></parameter>
+                    <include name="listUsers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="POST API FOR CREATE USERS">
+        <classes>
+            <class name="com.api.ApiTest.apiTest">
+                <methods>
+                    <parameter name="name" value="rajeev"></parameter>
+                    <parameter name="job" value="sdet"></parameter>
+                    <include name="createUsers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="PUT API FOR UPDATE USERS">
+        <classes>
+            <class name="com.api.ApiTest.apiTest">
+                <methods>
+                    <parameter name="name" value="rajeevk"></parameter>
+                    <parameter name="job" value="sdet"></parameter>
+                    <parameter name="id" value="2"></parameter>
+                    <include name="updateUsers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="DELETE API FOR DELETE USERS">
+        <classes>
+            <class name="com.api.ApiTest.apiTest">
+                <methods>
+                    <parameter name="id" value="2"></parameter>
+                    <include name="deleteUsers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
